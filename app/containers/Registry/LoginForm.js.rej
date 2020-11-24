@@ -1,0 +1,4 @@
+diff a/app/containers/Registry/LoginForm.js b/app/containers/Registry/LoginForm.js	(rejected hunks)
+@@ -18 +18 @@ import { Box, Button } from '@material-ui/core';
+-const useStyles = makeStyles(theme => ({
++const useStyles = makeStyles( () => ({
