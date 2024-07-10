@@ -33,7 +33,7 @@ export default function App() {
         />
         <Route exact path="/account-confirm-email/" component={ResetPassword} />
         <Route exact path="/reset/:key/:key" component={ChangePassword} />
-        <ProtectedRoute exact path="/" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

@@ -23,7 +23,6 @@ import {
   makeStyles,
 } from '@material-ui/core';
 import Notifications from 'containers/Notifications';
-import { Alert } from '@material-ui/lab';
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectLogin from './selectors';

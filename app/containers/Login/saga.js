@@ -38,11 +38,7 @@ function* login(token, user, history) {
     call(auth.setToken, token, true),
     call(auth.setUserInfo, user, true),
   ]);
-  if (!user.policy && user.role !== 'administrador') {
-    yield call(history.push, '/politicas-de-privacida');
-  } else {
-    yield call(history.push, '/');
-  }
+  yield call(history.push, '/');
   yield put({
     type: constants.LOGIN_SUCCEED,
     user,
